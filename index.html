@@ -3,13 +3,104 @@
 <head>
 	<title>Juan Carlos Paz: Página personal</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/landing.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"  />
+	<link rel="stylesheet" type="text/css" href="css/themify-icons.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
 </head>
 <body>
-	<h1>Juan Carlos Paz Espiñeira</h1>
-	<h3>Desarrollador de Software</h3>
-	<p>Bienvenido a mi página personal</p>
+	<div class="main-menu">
+		<div class="container full">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="fancy-header">
+						<img src="images/juancpaz-trimmed.png" />
+						<div class="fixed-title">
+							<h2>Hola, soy</h2>
+							<h1>Juan Carlos Paz</h1>
+							<p>Desarrollador de Software</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+                	<div class="row">
+                    	<div class="col-md-6 col-sm-6">
+                        	<div class="fancy-nav">
+                                <img src="images/fancy-menu04.jpg" alt="" />
+                                <ul>
+                                    <li><a href="profile.html" title=""><i class="ti-medall-alt"></i></a></li>
+                                    <li><a href="profile.html" title="">Profile</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                        	<div class="fancy-nav">
+                                <img src="images/fancy-menu01.jpg" alt="" />
+                                <ul>
+                                    <li><a href="blog.html" title=""><i class="ti-paint-bucket"></i></a></li>
+                                    <li><a href="blog.html" title="">BLog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                        	<div class="fancy-nav">
+                                <img src="images/fancy-menu02.jpg" alt="" />
+                                <ul>
+                                    <li><a href="portfolio.html" title=""><i class="ti-hummer"></i></a></li>
+                                    <li><a href="portfolio.html" title="">Portfolio</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                        	<div class="fancy-nav">
+                                <img src="images/fancy-menu03.jpg" alt="" />
+                                <ul>
+                                    <li><a href="contact.html" title=""><i class="ti-marker-alt"></i></a></li>
+                                    <li><a href="contact.html" title="">COntact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+        <div class="copyright">
+            <p>Copyright &copy; 2019 Juan Carlos Paz Espiñeira</p>
+        </div>	
+    </footer>	
+
+	<script type="text/javascript" src="js/jquery2.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    
+    <script>
+	
+		"use strict";
+		
+		(function($){
+			$(window).load(function(){
+				$(".styles-list").mCustomScrollbar();
+			});
+		})(jQuery);
+		
+		$(document).ready(function($) {
+			$('.btn-mov a').on('click', function() {
+					$('.styles-list').toggleClass('up');
+					$('.btn-mov').toggleClass('up');
+				return false;
+			});
+		});
+
+	</script>
 </body>
 </html>
