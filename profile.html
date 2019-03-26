@@ -17,7 +17,92 @@
 
 </head>
 <body>
-	<h4><a href="doc/cv/cv-jcpe-20190320-ssp.pdf">CV Juan Carlos Paz (Versión resumida)</a></h4>
-	<h4><a href="doc/cv/cv-jcpe-20190320-lsp.pdf">CV Juan Carlos Paz (Versión extensa y todavía en construcción)</a></h4>
+	<div class="layout">
+		<header>
+        	<div class="container full">
+        		<div class="row">
+            		<div class="col-md-12">
+                		<div class="inner-header_bg">
+                    		<img src="images/space.png" />
+                    	</div>
+                	</div>
+            	</div>
+        	</div>
+    	</header>	
+    	<section>
+    		<div class="sect-gap grey">
+        		<div class="container">
+            		<div class="row">
+                    	<div class="col-md-12">
+                    		<div class="aboutus">
+                        		<h2>Descargar CV</h2>                    			
+                            	<ul>
+									<li><a href="doc/cv/cv-jcpe-20190320-ssp.pdf">Versión resumida</a></li>
+									<li><a href="doc/cv/cv-jcpe-20190320-lsp.pdf">Versión extensa y siempre en construcción</a></li>
+                            	</ul>
+                        	</div>
+                    	</div>
+                	</div>
+            	</div>
+        	</div>
+    	</section>	
+	
+    	<section>
+        	<div class="container full">
+        		<div class="row">
+            		<div class="col-md-12">
+                		<div class="inner-header_bg">
+                    		<img src="images/space.png" />
+                    	</div>
+                	</div>
+            	</div>
+        	</div>
+    	</section>	
+
+		<section>
+    		<div class="sect-gap grey">
+        		<div class="container">
+            		<div class="row">
+                		<div class="col-md-12">
+                    		<div class="about">
+                        		<h2>sobre mi</h2>
+                            	<p>Desarrollador de Software con más de 20 años de experiencia, especializado en el desarrollo de Aplicaciones J2EE con Spring. Con conocimientos avanzados de las tecnologías y métodos que intervienen a lo largo del ciclo de vida de un sistema, Integración y despliegues continuos, contenerización y DevOps.</p>
+                        	</div>
+                    	</div>
+                	</div>
+            	</div>
+        	</div>
+    	</section>	
+
+	</div>
+
+	<footer>
+        <div class="copyright">
+            <p>Copyright &copy; 2019 Juan Carlos Paz Espiñeira</p>
+        </div>	
+    </footer>	
+
+	<script type="text/javascript" src="js/jquery2.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    
+    <script>
+	
+		"use strict";
+		
+		(function($){
+			$(window).load(function(){
+				$(".styles-list").mCustomScrollbar();
+			});
+		})(jQuery);
+		
+		$(document).ready(function($) {
+			$('.btn-mov a').on('click', function() {
+					$('.styles-list').toggleClass('up');
+					$('.btn-mov').toggleClass('up');
+				return false;
+			});
+		});
+
+	</script>
 </body>
 </html>	
